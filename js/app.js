@@ -80,12 +80,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    var secondSum = sum(testArray[0], testArray[1])[0];
+    var secondFinalSum = sum(secondSum, testArray[2])[0];
+    var sumFourString = testArray + ' was passed in as an array of numbers, and ' + secondFinalSum + ' is their sum.';
+    return [secondFinalSum, sumFourString];
+    
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -100,8 +104,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
 
+
+function multiplyArray(multArr) { //eslint-disable-line
+    // var secondProduct = multiply(testArray[0], testArray[1])[0];
+    // var secondFinalProduct = multiply(secondProduct, testArray[2])[0];
+    // var productFiveString = 'The numbers ' + multArr + ' have a product of ' + secondFinalProduct + '.'
+    // return[secondFinalProduct, productFiveString];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -129,10 +138,19 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+//     var productOfArray = 1;
+//     for(var i = 0; i < dynamicArray.length; i++){
+//         if(i === 1){
+//             productOfArray = multiply(dynamicArray[0],dynamicArray[i])[0];
+//         } else {
+//             productOfArray = multiply(productOfArray, dynamicArray[i])[0];
+//         }
+//     }
+//     var multiSixString = 'The numbers ' + dynamicArray + ' have a product of ' + productOfArray + '.'
+//     return[productOfArray, multiSixString];
+// }
 
-}
-
-// Here is the test for multiplyArray(); uncomment it to run it
+// // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+// // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
